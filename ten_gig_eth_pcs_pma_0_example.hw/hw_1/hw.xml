@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2015.4.1 (64-bit)                   -->
+<!--                                                              -->
+<!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="1">
+  <device name="xc7vx690t_0" gui_info="dashboard1=hw_vios[xc7vx690t_0/hw_vio_1=VIO_PROBES_1;],dashboard2=hw_ila_1[xc7vx690t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7vx690t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7vx690t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7vx690t_0/hw_ila_1/Status=ILA_STATUS_1;xc7vx690t_0/hw_ila_1/Settings=ILA_SETTINGS_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7vx690t_0" gui_info="">
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/ten_gig_eth_pcs_pma_0_top.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="OR"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_0_0" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="OR"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_1" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="D" gui_info="hw_vios/hw_vio_1=16"/>
+    <Object name="ctrl_vio_n_3" gui_info="hw_vios/hw_vio_1=16"/>
+    <Object name="ctrl_vio_n_5" gui_info="hw_vios/hw_vio_1=6"/>
+    <Object name="ctrl_vio_n_6" gui_info="hw_vios/hw_vio_1=5_exp"/>
+    <Object name="dest_addr[47:0]" gui_info="hw_vios/hw_vio_1=10"/>
+    <Object name="eth_send" gui_info="hw_vios/hw_vio_1=6,Trigger Setup=0"/>
+    <Object name="eth_send_1" gui_info="hw_vios/hw_vio_1=16"/>
+    <Object name="global_tx_disable" gui_info="hw_vios/hw_vio_1=11_exp"/>
+    <Object name="in_pulse" gui_info="hw_vios/hw_vio_1=15"/>
+    <Object name="mac_0/crc_en" gui_info=""/>
+    <Object name="mac_0/xgmii_crc_int[63:0]" gui_info=""/>
+    <Object name="mac_0/xgmii_txd_crc[31:0]" gui_info=""/>
+    <Object name="mac_tx_tvalid" gui_info="Trigger Setup=1"/>
+    <Object name="oload_crc[31:0]" gui_info="hw_vios/hw_vio_1=17"/>
+    <Object name="pcs_loopback" gui_info="hw_vios/hw_vio_1=6"/>
+    <Object name="pcs_reset" gui_info="hw_vios/hw_vio_1=12"/>
+    <Object name="pma_reset" gui_info="hw_vios/hw_vio_1=7"/>
+    <Object name="src_addr[47:0]" gui_info="hw_vios/hw_vio_1=13"/>
+    <Object name="sts_pcs_hiber" gui_info="hw_vios/hw_vio_1=8"/>
+    <Object name="sts_pcs_link_status" gui_info="hw_vios/hw_vio_1=0"/>
+    <Object name="sts_pcs_lock" gui_info="hw_vios/hw_vio_1=1"/>
+    <Object name="sts_pcs_pma_lock" gui_info="hw_vios/hw_vio_1=2"/>
+    <Object name="sts_pcs_rx_lock" gui_info="hw_vios/hw_vio_1=3"/>
+    <Object name="sts_pma_link_status" gui_info="hw_vios/hw_vio_1=9"/>
+    <Object name="sts_sig_detect" gui_info="hw_vios/hw_vio_1=4"/>
+    <Object name="sts_xpcs_rx_link_status" gui_info="hw_vios/hw_vio_1=14"/>
+    <Object name="xgmii_rxc[7:0]" gui_info=""/>
+    <Object name="xgmii_rxd[63:0]" gui_info=""/>
+    <Object name="xgmii_txc[7:0]" gui_info=""/>
+    <Object name="xgmii_txd[63:0]" gui_info=""/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;h1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;h1"/>
+      </probeOptions>
+      <nets>
+        <net name="eth_send"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="mac_0/crc_en"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="mac_0/xgmii_crc_int[63]"/>
+        <net name="mac_0/xgmii_crc_int[62]"/>
+        <net name="mac_0/xgmii_crc_int[61]"/>
+        <net name="mac_0/xgmii_crc_int[60]"/>
+        <net name="mac_0/xgmii_crc_int[59]"/>
+        <net name="mac_0/xgmii_crc_int[58]"/>
+        <net name="mac_0/xgmii_crc_int[57]"/>
+        <net name="mac_0/xgmii_crc_int[56]"/>
+        <net name="mac_0/xgmii_crc_int[55]"/>
+        <net name="mac_0/xgmii_crc_int[54]"/>
+        <net name="mac_0/xgmii_crc_int[53]"/>
+        <net name="mac_0/xgmii_crc_int[52]"/>
+        <net name="mac_0/xgmii_crc_int[51]"/>
+        <net name="mac_0/xgmii_crc_int[50]"/>
+        <net name="mac_0/xgmii_crc_int[49]"/>
+        <net name="mac_0/xgmii_crc_int[48]"/>
+        <net name="mac_0/xgmii_crc_int[47]"/>
+        <net name="mac_0/xgmii_crc_int[46]"/>
+        <net name="mac_0/xgmii_crc_int[45]"/>
+        <net name="mac_0/xgmii_crc_int[44]"/>
+        <net name="mac_0/xgmii_crc_int[43]"/>
+        <net name="mac_0/xgmii_crc_int[42]"/>
+        <net name="mac_0/xgmii_crc_int[41]"/>
+        <net name="mac_0/xgmii_crc_int[40]"/>
+        <net name="mac_0/xgmii_crc_int[39]"/>
+        <net name="mac_0/xgmii_crc_int[38]"/>
+        <net name="mac_0/xgmii_crc_int[37]"/>
+        <net name="mac_0/xgmii_crc_int[36]"/>
+        <net name="mac_0/xgmii_crc_int[35]"/>
+        <net name="mac_0/xgmii_crc_int[34]"/>
+        <net name="mac_0/xgmii_crc_int[33]"/>
+        <net name="mac_0/xgmii_crc_int[32]"/>
+        <net name="mac_0/xgmii_crc_int[31]"/>
+        <net name="mac_0/xgmii_crc_int[30]"/>
+        <net name="mac_0/xgmii_crc_int[29]"/>
+        <net name="mac_0/xgmii_crc_int[28]"/>
+        <net name="mac_0/xgmii_crc_int[27]"/>
+        <net name="mac_0/xgmii_crc_int[26]"/>
+        <net name="mac_0/xgmii_crc_int[25]"/>
+        <net name="mac_0/xgmii_crc_int[24]"/>
+        <net name="mac_0/xgmii_crc_int[23]"/>
+        <net name="mac_0/xgmii_crc_int[22]"/>
+        <net name="mac_0/xgmii_crc_int[21]"/>
+        <net name="mac_0/xgmii_crc_int[20]"/>
+        <net name="mac_0/xgmii_crc_int[19]"/>
+        <net name="mac_0/xgmii_crc_int[18]"/>
+        <net name="mac_0/xgmii_crc_int[17]"/>
+        <net name="mac_0/xgmii_crc_int[16]"/>
+        <net name="mac_0/xgmii_crc_int[15]"/>
+        <net name="mac_0/xgmii_crc_int[14]"/>
+        <net name="mac_0/xgmii_crc_int[13]"/>
+        <net name="mac_0/xgmii_crc_int[12]"/>
+        <net name="mac_0/xgmii_crc_int[11]"/>
+        <net name="mac_0/xgmii_crc_int[10]"/>
+        <net name="mac_0/xgmii_crc_int[9]"/>
+        <net name="mac_0/xgmii_crc_int[8]"/>
+        <net name="mac_0/xgmii_crc_int[7]"/>
+        <net name="mac_0/xgmii_crc_int[6]"/>
+        <net name="mac_0/xgmii_crc_int[5]"/>
+        <net name="mac_0/xgmii_crc_int[4]"/>
+        <net name="mac_0/xgmii_crc_int[3]"/>
+        <net name="mac_0/xgmii_crc_int[2]"/>
+        <net name="mac_0/xgmii_crc_int[1]"/>
+        <net name="mac_0/xgmii_crc_int[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="mac_0/xgmii_txd_crc[31]"/>
+        <net name="mac_0/xgmii_txd_crc[30]"/>
+        <net name="mac_0/xgmii_txd_crc[29]"/>
+        <net name="mac_0/xgmii_txd_crc[28]"/>
+        <net name="mac_0/xgmii_txd_crc[27]"/>
+        <net name="mac_0/xgmii_txd_crc[26]"/>
+        <net name="mac_0/xgmii_txd_crc[25]"/>
+        <net name="mac_0/xgmii_txd_crc[24]"/>
+        <net name="mac_0/xgmii_txd_crc[23]"/>
+        <net name="mac_0/xgmii_txd_crc[22]"/>
+        <net name="mac_0/xgmii_txd_crc[21]"/>
+        <net name="mac_0/xgmii_txd_crc[20]"/>
+        <net name="mac_0/xgmii_txd_crc[19]"/>
+        <net name="mac_0/xgmii_txd_crc[18]"/>
+        <net name="mac_0/xgmii_txd_crc[17]"/>
+        <net name="mac_0/xgmii_txd_crc[16]"/>
+        <net name="mac_0/xgmii_txd_crc[15]"/>
+        <net name="mac_0/xgmii_txd_crc[14]"/>
+        <net name="mac_0/xgmii_txd_crc[13]"/>
+        <net name="mac_0/xgmii_txd_crc[12]"/>
+        <net name="mac_0/xgmii_txd_crc[11]"/>
+        <net name="mac_0/xgmii_txd_crc[10]"/>
+        <net name="mac_0/xgmii_txd_crc[9]"/>
+        <net name="mac_0/xgmii_txd_crc[8]"/>
+        <net name="mac_0/xgmii_txd_crc[7]"/>
+        <net name="mac_0/xgmii_txd_crc[6]"/>
+        <net name="mac_0/xgmii_txd_crc[5]"/>
+        <net name="mac_0/xgmii_txd_crc[4]"/>
+        <net name="mac_0/xgmii_txd_crc[3]"/>
+        <net name="mac_0/xgmii_txd_crc[2]"/>
+        <net name="mac_0/xgmii_txd_crc[1]"/>
+        <net name="mac_0/xgmii_txd_crc[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="mac_tx_ready"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="mac_tx_tdata[63]"/>
+        <net name="mac_tx_tdata[62]"/>
+        <net name="mac_tx_tdata[61]"/>
+        <net name="mac_tx_tdata[60]"/>
+        <net name="mac_tx_tdata[59]"/>
+        <net name="mac_tx_tdata[58]"/>
+        <net name="mac_tx_tdata[57]"/>
+        <net name="mac_tx_tdata[56]"/>
+        <net name="mac_tx_tdata[55]"/>
+        <net name="mac_tx_tdata[54]"/>
+        <net name="mac_tx_tdata[53]"/>
+        <net name="mac_tx_tdata[52]"/>
+        <net name="mac_tx_tdata[51]"/>
+        <net name="mac_tx_tdata[50]"/>
+        <net name="mac_tx_tdata[49]"/>
+        <net name="mac_tx_tdata[48]"/>
+        <net name="mac_tx_tdata[47]"/>
+        <net name="mac_tx_tdata[46]"/>
+        <net name="mac_tx_tdata[45]"/>
+        <net name="mac_tx_tdata[44]"/>
+        <net name="mac_tx_tdata[43]"/>
+        <net name="mac_tx_tdata[42]"/>
+        <net name="mac_tx_tdata[41]"/>
+        <net name="mac_tx_tdata[40]"/>
+        <net name="mac_tx_tdata[39]"/>
+        <net name="mac_tx_tdata[38]"/>
+        <net name="mac_tx_tdata[37]"/>
+        <net name="mac_tx_tdata[36]"/>
+        <net name="mac_tx_tdata[35]"/>
+        <net name="mac_tx_tdata[34]"/>
+        <net name="mac_tx_tdata[33]"/>
+        <net name="mac_tx_tdata[32]"/>
+        <net name="mac_tx_tdata[31]"/>
+        <net name="mac_tx_tdata[30]"/>
+        <net name="mac_tx_tdata[29]"/>
+        <net name="mac_tx_tdata[28]"/>
+        <net name="mac_tx_tdata[27]"/>
+        <net name="mac_tx_tdata[26]"/>
+        <net name="mac_tx_tdata[25]"/>
+        <net name="mac_tx_tdata[24]"/>
+        <net name="mac_tx_tdata[23]"/>
+        <net name="mac_tx_tdata[22]"/>
+        <net name="mac_tx_tdata[21]"/>
+        <net name="mac_tx_tdata[20]"/>
+        <net name="mac_tx_tdata[19]"/>
+        <net name="mac_tx_tdata[18]"/>
+        <net name="mac_tx_tdata[17]"/>
+        <net name="mac_tx_tdata[16]"/>
+        <net name="mac_tx_tdata[15]"/>
+        <net name="mac_tx_tdata[14]"/>
+        <net name="mac_tx_tdata[13]"/>
+        <net name="mac_tx_tdata[12]"/>
+        <net name="mac_tx_tdata[11]"/>
+        <net name="mac_tx_tdata[10]"/>
+        <net name="mac_tx_tdata[9]"/>
+        <net name="mac_tx_tdata[8]"/>
+        <net name="mac_tx_tdata[7]"/>
+        <net name="mac_tx_tdata[6]"/>
+        <net name="mac_tx_tdata[5]"/>
+        <net name="mac_tx_tdata[4]"/>
+        <net name="mac_tx_tdata[3]"/>
+        <net name="mac_tx_tdata[2]"/>
+        <net name="mac_tx_tdata[1]"/>
+        <net name="mac_tx_tdata[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+      </probeOptions>
+      <nets>
+        <net name="mac_tx_tkeep[7]"/>
+        <net name="mac_tx_tkeep[6]"/>
+        <net name="mac_tx_tkeep[5]"/>
+        <net name="mac_tx_tkeep[4]"/>
+        <net name="mac_tx_tkeep[3]"/>
+        <net name="mac_tx_tkeep[2]"/>
+        <net name="mac_tx_tkeep[1]"/>
+        <net name="mac_tx_tkeep[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="mac_tx_tlast"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;h1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;h1"/>
+      </probeOptions>
+      <nets>
+        <net name="mac_tx_tvalid"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[63]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[62]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[61]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[60]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[59]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[58]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[57]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[56]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[55]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[54]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[53]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[52]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[51]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[50]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[49]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[48]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[47]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[46]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[45]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[44]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[43]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[42]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[41]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[40]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[39]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[38]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[37]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[36]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[35]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[34]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[33]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[32]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[31]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[30]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[29]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[28]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[27]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[26]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[25]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[24]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[23]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[22]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[21]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[20]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[19]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[18]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[17]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[16]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[15]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[14]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[13]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[12]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[11]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[10]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[9]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[8]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[7]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[6]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[5]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[4]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[3]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[2]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[1]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tdata[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+      </probeOptions>
+      <nets>
+        <net name="top/fifo_block_i/rx_axis_mac_tkeep[7]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tkeep[6]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tkeep[5]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tkeep[4]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tkeep[3]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tkeep[2]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tkeep[1]"/>
+        <net name="top/fifo_block_i/rx_axis_mac_tkeep[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="top/fifo_block_i/rx_axis_mac_tlast"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="top/fifo_block_i/rx_axis_mac_tuser"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="top/fifo_block_i/rx_axis_mac_tvalid"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[63]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[62]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[61]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[60]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[59]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[58]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[57]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[56]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[55]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[54]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[53]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[52]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[51]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[50]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[49]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[48]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[47]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[46]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[45]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[44]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[43]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[42]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[41]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[40]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[39]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[38]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[37]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[36]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[35]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[34]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[33]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[32]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[31]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[30]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[29]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[28]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[27]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[26]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[25]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[24]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[23]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[22]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[21]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[20]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[19]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[18]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[17]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[16]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[15]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[14]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[13]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[12]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[11]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[10]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[9]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[8]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[7]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[6]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[5]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[4]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[3]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[2]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[1]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tdata[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+      </probeOptions>
+      <nets>
+        <net name="top/fifo_block_i/tx_axis_mac_tkeep[7]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tkeep[6]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tkeep[5]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tkeep[4]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tkeep[3]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tkeep[2]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tkeep[1]"/>
+        <net name="top/fifo_block_i/tx_axis_mac_tkeep[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="top/fifo_block_i/tx_axis_mac_tlast"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="top/fifo_block_i/tx_axis_mac_tready"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;h1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;h1"/>
+      </probeOptions>
+      <nets>
+        <net name="top/fifo_block_i/tx_axis_mac_tvalid"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+      </probeOptions>
+      <nets>
+        <net name="xgmii_rxc[7]"/>
+        <net name="xgmii_rxc[6]"/>
+        <net name="xgmii_rxc[5]"/>
+        <net name="xgmii_rxc[4]"/>
+        <net name="xgmii_rxc[3]"/>
+        <net name="xgmii_rxc[2]"/>
+        <net name="xgmii_rxc[1]"/>
+        <net name="xgmii_rxc[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="xgmii_rxd[63]"/>
+        <net name="xgmii_rxd[62]"/>
+        <net name="xgmii_rxd[61]"/>
+        <net name="xgmii_rxd[60]"/>
+        <net name="xgmii_rxd[59]"/>
+        <net name="xgmii_rxd[58]"/>
+        <net name="xgmii_rxd[57]"/>
+        <net name="xgmii_rxd[56]"/>
+        <net name="xgmii_rxd[55]"/>
+        <net name="xgmii_rxd[54]"/>
+        <net name="xgmii_rxd[53]"/>
+        <net name="xgmii_rxd[52]"/>
+        <net name="xgmii_rxd[51]"/>
+        <net name="xgmii_rxd[50]"/>
+        <net name="xgmii_rxd[49]"/>
+        <net name="xgmii_rxd[48]"/>
+        <net name="xgmii_rxd[47]"/>
+        <net name="xgmii_rxd[46]"/>
+        <net name="xgmii_rxd[45]"/>
+        <net name="xgmii_rxd[44]"/>
+        <net name="xgmii_rxd[43]"/>
+        <net name="xgmii_rxd[42]"/>
+        <net name="xgmii_rxd[41]"/>
+        <net name="xgmii_rxd[40]"/>
+        <net name="xgmii_rxd[39]"/>
+        <net name="xgmii_rxd[38]"/>
+        <net name="xgmii_rxd[37]"/>
+        <net name="xgmii_rxd[36]"/>
+        <net name="xgmii_rxd[35]"/>
+        <net name="xgmii_rxd[34]"/>
+        <net name="xgmii_rxd[33]"/>
+        <net name="xgmii_rxd[32]"/>
+        <net name="xgmii_rxd[31]"/>
+        <net name="xgmii_rxd[30]"/>
+        <net name="xgmii_rxd[29]"/>
+        <net name="xgmii_rxd[28]"/>
+        <net name="xgmii_rxd[27]"/>
+        <net name="xgmii_rxd[26]"/>
+        <net name="xgmii_rxd[25]"/>
+        <net name="xgmii_rxd[24]"/>
+        <net name="xgmii_rxd[23]"/>
+        <net name="xgmii_rxd[22]"/>
+        <net name="xgmii_rxd[21]"/>
+        <net name="xgmii_rxd[20]"/>
+        <net name="xgmii_rxd[19]"/>
+        <net name="xgmii_rxd[18]"/>
+        <net name="xgmii_rxd[17]"/>
+        <net name="xgmii_rxd[16]"/>
+        <net name="xgmii_rxd[15]"/>
+        <net name="xgmii_rxd[14]"/>
+        <net name="xgmii_rxd[13]"/>
+        <net name="xgmii_rxd[12]"/>
+        <net name="xgmii_rxd[11]"/>
+        <net name="xgmii_rxd[10]"/>
+        <net name="xgmii_rxd[9]"/>
+        <net name="xgmii_rxd[8]"/>
+        <net name="xgmii_rxd[7]"/>
+        <net name="xgmii_rxd[6]"/>
+        <net name="xgmii_rxd[5]"/>
+        <net name="xgmii_rxd[4]"/>
+        <net name="xgmii_rxd[3]"/>
+        <net name="xgmii_rxd[2]"/>
+        <net name="xgmii_rxd[1]"/>
+        <net name="xgmii_rxd[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+      </probeOptions>
+      <nets>
+        <net name="xgmii_txc[7]"/>
+        <net name="xgmii_txc[6]"/>
+        <net name="xgmii_txc[5]"/>
+        <net name="xgmii_txc[4]"/>
+        <net name="xgmii_txc[3]"/>
+        <net name="xgmii_txc[2]"/>
+        <net name="xgmii_txc[1]"/>
+        <net name="xgmii_txc[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="xgmii_txd[63]"/>
+        <net name="xgmii_txd[62]"/>
+        <net name="xgmii_txd[61]"/>
+        <net name="xgmii_txd[60]"/>
+        <net name="xgmii_txd[59]"/>
+        <net name="xgmii_txd[58]"/>
+        <net name="xgmii_txd[57]"/>
+        <net name="xgmii_txd[56]"/>
+        <net name="xgmii_txd[55]"/>
+        <net name="xgmii_txd[54]"/>
+        <net name="xgmii_txd[53]"/>
+        <net name="xgmii_txd[52]"/>
+        <net name="xgmii_txd[51]"/>
+        <net name="xgmii_txd[50]"/>
+        <net name="xgmii_txd[49]"/>
+        <net name="xgmii_txd[48]"/>
+        <net name="xgmii_txd[47]"/>
+        <net name="xgmii_txd[46]"/>
+        <net name="xgmii_txd[45]"/>
+        <net name="xgmii_txd[44]"/>
+        <net name="xgmii_txd[43]"/>
+        <net name="xgmii_txd[42]"/>
+        <net name="xgmii_txd[41]"/>
+        <net name="xgmii_txd[40]"/>
+        <net name="xgmii_txd[39]"/>
+        <net name="xgmii_txd[38]"/>
+        <net name="xgmii_txd[37]"/>
+        <net name="xgmii_txd[36]"/>
+        <net name="xgmii_txd[35]"/>
+        <net name="xgmii_txd[34]"/>
+        <net name="xgmii_txd[33]"/>
+        <net name="xgmii_txd[32]"/>
+        <net name="xgmii_txd[31]"/>
+        <net name="xgmii_txd[30]"/>
+        <net name="xgmii_txd[29]"/>
+        <net name="xgmii_txd[28]"/>
+        <net name="xgmii_txd[27]"/>
+        <net name="xgmii_txd[26]"/>
+        <net name="xgmii_txd[25]"/>
+        <net name="xgmii_txd[24]"/>
+        <net name="xgmii_txd[23]"/>
+        <net name="xgmii_txd[22]"/>
+        <net name="xgmii_txd[21]"/>
+        <net name="xgmii_txd[20]"/>
+        <net name="xgmii_txd[19]"/>
+        <net name="xgmii_txd[18]"/>
+        <net name="xgmii_txd[17]"/>
+        <net name="xgmii_txd[16]"/>
+        <net name="xgmii_txd[15]"/>
+        <net name="xgmii_txd[14]"/>
+        <net name="xgmii_txd[13]"/>
+        <net name="xgmii_txd[12]"/>
+        <net name="xgmii_txd[11]"/>
+        <net name="xgmii_txd[10]"/>
+        <net name="xgmii_txd[9]"/>
+        <net name="xgmii_txd[8]"/>
+        <net name="xgmii_txd[7]"/>
+        <net name="xgmii_txd[6]"/>
+        <net name="xgmii_txd[5]"/>
+        <net name="xgmii_txd[4]"/>
+        <net name="xgmii_txd[3]"/>
+        <net name="xgmii_txd[2]"/>
+        <net name="xgmii_txd[1]"/>
+        <net name="xgmii_txd[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="check_active_flash"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="core_ready"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="frame_error"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="gen_active_flash"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="qplllock_out"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="serialized_stats"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:128,128,128,;LED_High:255,0,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="sts_pcs_hiber"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="sts_pcs_link_status"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="sts_pcs_lock"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="sts_pcs_pma_lock"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="sts_pcs_rx_lock"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="sts_pma_link_status"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="sts_sig_detect"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="sts_xpcs_rx_link_status"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value="OutputDisplay:Active_High;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="D"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value="OutputDisplay:Toggle;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="1"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="ctrl_vio_n_3"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value="OutputDisplay:OutputText;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="ctrl_vio_n_5"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="ctrl_vio_n_6"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="001b21d73958"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+      </probeOptions>
+      <nets>
+        <net name="dest_addr[47]"/>
+        <net name="dest_addr[46]"/>
+        <net name="dest_addr[45]"/>
+        <net name="dest_addr[44]"/>
+        <net name="dest_addr[43]"/>
+        <net name="dest_addr[42]"/>
+        <net name="dest_addr[41]"/>
+        <net name="dest_addr[40]"/>
+        <net name="dest_addr[39]"/>
+        <net name="dest_addr[38]"/>
+        <net name="dest_addr[37]"/>
+        <net name="dest_addr[36]"/>
+        <net name="dest_addr[35]"/>
+        <net name="dest_addr[34]"/>
+        <net name="dest_addr[33]"/>
+        <net name="dest_addr[32]"/>
+        <net name="dest_addr[31]"/>
+        <net name="dest_addr[30]"/>
+        <net name="dest_addr[29]"/>
+        <net name="dest_addr[28]"/>
+        <net name="dest_addr[27]"/>
+        <net name="dest_addr[26]"/>
+        <net name="dest_addr[25]"/>
+        <net name="dest_addr[24]"/>
+        <net name="dest_addr[23]"/>
+        <net name="dest_addr[22]"/>
+        <net name="dest_addr[21]"/>
+        <net name="dest_addr[20]"/>
+        <net name="dest_addr[19]"/>
+        <net name="dest_addr[18]"/>
+        <net name="dest_addr[17]"/>
+        <net name="dest_addr[16]"/>
+        <net name="dest_addr[15]"/>
+        <net name="dest_addr[14]"/>
+        <net name="dest_addr[13]"/>
+        <net name="dest_addr[12]"/>
+        <net name="dest_addr[11]"/>
+        <net name="dest_addr[10]"/>
+        <net name="dest_addr[9]"/>
+        <net name="dest_addr[8]"/>
+        <net name="dest_addr[7]"/>
+        <net name="dest_addr[6]"/>
+        <net name="dest_addr[5]"/>
+        <net name="dest_addr[4]"/>
+        <net name="dest_addr[3]"/>
+        <net name="dest_addr[2]"/>
+        <net name="dest_addr[1]"/>
+        <net name="dest_addr[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="1"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="enable_pat_check"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="1"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="enable_pat_gen"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value="OutputDisplay:Active_High;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="eth_send"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value="OutputDisplay:Active_High;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="eth_send_1"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="global_tx_disable"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value="OutputDisplay:Active_High;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="in_pulse"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="insert_error"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="892D58F4"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+      </probeOptions>
+      <nets>
+        <net name="oload_crc[31]"/>
+        <net name="oload_crc[30]"/>
+        <net name="oload_crc[29]"/>
+        <net name="oload_crc[28]"/>
+        <net name="oload_crc[27]"/>
+        <net name="oload_crc[26]"/>
+        <net name="oload_crc[25]"/>
+        <net name="oload_crc[24]"/>
+        <net name="oload_crc[23]"/>
+        <net name="oload_crc[22]"/>
+        <net name="oload_crc[21]"/>
+        <net name="oload_crc[20]"/>
+        <net name="oload_crc[19]"/>
+        <net name="oload_crc[18]"/>
+        <net name="oload_crc[17]"/>
+        <net name="oload_crc[16]"/>
+        <net name="oload_crc[15]"/>
+        <net name="oload_crc[14]"/>
+        <net name="oload_crc[13]"/>
+        <net name="oload_crc[12]"/>
+        <net name="oload_crc[11]"/>
+        <net name="oload_crc[10]"/>
+        <net name="oload_crc[9]"/>
+        <net name="oload_crc[8]"/>
+        <net name="oload_crc[7]"/>
+        <net name="oload_crc[6]"/>
+        <net name="oload_crc[5]"/>
+        <net name="oload_crc[4]"/>
+        <net name="oload_crc[3]"/>
+        <net name="oload_crc[2]"/>
+        <net name="oload_crc[1]"/>
+        <net name="oload_crc[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="00000000"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+      </probeOptions>
+      <nets>
+        <net name="ovload_crc[31]"/>
+        <net name="ovload_crc[30]"/>
+        <net name="ovload_crc[29]"/>
+        <net name="ovload_crc[28]"/>
+        <net name="ovload_crc[27]"/>
+        <net name="ovload_crc[26]"/>
+        <net name="ovload_crc[25]"/>
+        <net name="ovload_crc[24]"/>
+        <net name="ovload_crc[23]"/>
+        <net name="ovload_crc[22]"/>
+        <net name="ovload_crc[21]"/>
+        <net name="ovload_crc[20]"/>
+        <net name="ovload_crc[19]"/>
+        <net name="ovload_crc[18]"/>
+        <net name="ovload_crc[17]"/>
+        <net name="ovload_crc[16]"/>
+        <net name="ovload_crc[15]"/>
+        <net name="ovload_crc[14]"/>
+        <net name="ovload_crc[13]"/>
+        <net name="ovload_crc[12]"/>
+        <net name="ovload_crc[11]"/>
+        <net name="ovload_crc[10]"/>
+        <net name="ovload_crc[9]"/>
+        <net name="ovload_crc[8]"/>
+        <net name="ovload_crc[7]"/>
+        <net name="ovload_crc[6]"/>
+        <net name="ovload_crc[5]"/>
+        <net name="ovload_crc[4]"/>
+        <net name="ovload_crc[3]"/>
+        <net name="ovload_crc[2]"/>
+        <net name="ovload_crc[1]"/>
+        <net name="ovload_crc[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="pcs_loopback"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value="OutputDisplay:Toggle;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="1"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="pcs_reset"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value="OutputDisplay:Toggle;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="pma_reset"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="1"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="reset"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="1"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="reset_error"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="sim_speedup_control"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="000504030201"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+      </probeOptions>
+      <nets>
+        <net name="src_addr[47]"/>
+        <net name="src_addr[46]"/>
+        <net name="src_addr[45]"/>
+        <net name="src_addr[44]"/>
+        <net name="src_addr[43]"/>
+        <net name="src_addr[42]"/>
+        <net name="src_addr[41]"/>
+        <net name="src_addr[40]"/>
+        <net name="src_addr[39]"/>
+        <net name="src_addr[38]"/>
+        <net name="src_addr[37]"/>
+        <net name="src_addr[36]"/>
+        <net name="src_addr[35]"/>
+        <net name="src_addr[34]"/>
+        <net name="src_addr[33]"/>
+        <net name="src_addr[32]"/>
+        <net name="src_addr[31]"/>
+        <net name="src_addr[30]"/>
+        <net name="src_addr[29]"/>
+        <net name="src_addr[28]"/>
+        <net name="src_addr[27]"/>
+        <net name="src_addr[26]"/>
+        <net name="src_addr[25]"/>
+        <net name="src_addr[24]"/>
+        <net name="src_addr[23]"/>
+        <net name="src_addr[22]"/>
+        <net name="src_addr[21]"/>
+        <net name="src_addr[20]"/>
+        <net name="src_addr[19]"/>
+        <net name="src_addr[18]"/>
+        <net name="src_addr[17]"/>
+        <net name="src_addr[16]"/>
+        <net name="src_addr[15]"/>
+        <net name="src_addr[14]"/>
+        <net name="src_addr[13]"/>
+        <net name="src_addr[12]"/>
+        <net name="src_addr[11]"/>
+        <net name="src_addr[10]"/>
+        <net name="src_addr[9]"/>
+        <net name="src_addr[8]"/>
+        <net name="src_addr[7]"/>
+        <net name="src_addr[6]"/>
+        <net name="src_addr[5]"/>
+        <net name="src_addr[4]"/>
+        <net name="src_addr[3]"/>
+        <net name="src_addr[2]"/>
+        <net name="src_addr[1]"/>
+        <net name="src_addr[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="vio_n_7"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>
